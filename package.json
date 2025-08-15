@@ -4,19 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "prepare": "husky"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "jest": "^30.0.5",
-    "pre-commit": "^1.0.10"
-  },
-  "overrides": {
-    "cross-spawn": "^7.0.3"
-  },
-  "pre-commit": [
-    "test"
-  ]
+    "husky": "^9.1.7",
+    "jest": "^30.0.5"
+  }
 }
