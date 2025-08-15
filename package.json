@@ -10,6 +10,13 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "jest": "^30.0.5"
-  }
+    "jest": "^30.0.5",
+    "pre-commit": "^1.0.10"
+  },
+  "overrides": {
+    "cross-spawn": "^7.0.3"
+  },
+  "pre-commit": [
+    "test"
+  ]
 }
