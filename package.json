@@ -5,13 +5,23 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "prepare": "husky"
+    "lint": "eslint \"src/**/*.{js,mjs}\""
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@eslint/js": "^9.33.0",
+    "eslint": "^8.57.1",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.32.0",
+    "globals": "^16.3.0",
     "husky": "^9.1.7",
     "jest": "^30.0.5"
+  },
+  "husky": {
+    "hooks": {
+        "pre-commit": "npm run lint && npm test"
+    }
   }
 }
