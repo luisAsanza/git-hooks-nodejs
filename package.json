@@ -6,7 +6,8 @@
   "scripts": {
     "test": "jest",
     "lint": "eslint \"src/**/*.{js,mjs}\"",
-    "lint-fix": "eslint src/** --fix"
+    "lint-fix": "eslint src/** --fix",
+    "success-message": "echo Thanks for commiting $GIT_AUTHOR_NAME"
   },
   "keywords": [],
   "author": "",
